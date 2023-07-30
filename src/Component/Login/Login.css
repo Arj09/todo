@@ -1,0 +1,76 @@
+*{
+
+}
+
+.Loginform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    width: 30%;
+    border: 0.2px solid blue;
+    border-radius: 3px;
+    font-size: 2em;
+    .small{
+        text-align: center;
+        color: grey;
+        padding: 0;
+        margin: 0;
+    }
+    .logo{
+        padding: 40px;
+        font-size: 1.5em;
+    }
+    .logof{
+        padding: 30px;
+        font-size: 0.5em;
+        cursor: pointer;
+    }
+}
+input{
+    width: 90%;
+    padding: 10px 20px;
+    margin: 7px auto;
+}
+button{
+    width: 90%;
+    margin: 7px auto;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: 0.2px solid blue;
+}
+
+@media (max-width:1080px) {
+    .Loginform{
+        width: 60%;
+        .logo{
+            padding: 35px;
+            
+        }
+        .logof{
+            padding: 25px;
+           
+        }
+    }
+   
+}
+
+
+@media (max-width:600px) {
+    .Loginform{
+        width: 80%;
+        .logo{
+            padding: 30px;
+            font-size: 1em;
+        }
+        .logof{
+            padding: 20px;
+            font-size: 0.5em;
+            
+        }
+    }
+   
+    
+}

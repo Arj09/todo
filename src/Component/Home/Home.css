@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.addcontactform{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    font-size: 1em;
+   
+    .logo{
+        text-align: center;
+        font-size: 2em;
+        padding: 10px 10px;
+        
+    }
+}
+input{
+    width: 90%;
+    padding: 10px 20px;
+}
+.addconatct{
+    width: 90%;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+.showdata1{
+    width: 60%;
+    margin: 20px auto;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+    list-style: none;
+    border: 0.2px solid gray;
+    gap: 10px;
+    background-color: blue;
+    
+    .item1{
+        text-align: center;
+        padding: 10px 20px;
+        color: white;
+
+    }
+}
+
+.showdata{
+    width: 60%;
+    margin: 10px auto;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+    list-style: none;
+    border: 0.2px solid gray;
+    gap: 10px;
+    
+    .item{
+        text-align: center;
+        padding: 5px 10px;
+        
+
+
+    }
+
+}
+
+.innerShow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    .inner{
+        padding: 4px 8px;
+        color: white;
+        border: 0.2px solid white;
+        background-color: blue;
+        cursor: pointer;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1080px) {
+
+    .showdata1{
+        display: none;
+    }
+    .showdata{
+        display: block;
+        
+        .item{
+            text-align: start;
+            margin-left: 10px;
+    
+        }
+    }
+    .innerShow{
+        justify-content: center;
+        margin: 5px auto;
+    }
+    .addcontactform{
+        .logo{
+            font-size: 1.8em;
+        }
+    }
+    
+}
+
+@media (max-width:600px) {
+    .addcontactform{
+        .logo{
+            font-size: 1.2em;
+            
+        }
+    }
+    .showdata{
+        .item{
+            font-size: 10px;
+            margin-left: 2px;
+        }
+    }
+    
+}
